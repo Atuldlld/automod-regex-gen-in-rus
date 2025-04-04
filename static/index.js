@@ -55,10 +55,19 @@ function updateRegex() {
     settings += checkbox_duc.checked << 9
     settings += checkbox_uni.checked << 10
 
-    location.hash = btoa(JSON.stringify({
+    const jsonString = JSON.stringify({
         input: input.value.toLowerCase(),
         settings: settings
-    })).replaceAll('+', '-').replaceAll('/', '_').replaceAll('=', '')
+    });
+    
+    const encodedData = encodeURIComponent(jsonString);
+    
+    const base64Data = btoa(encodedData)
+        .replace(/\+/g, '-')
+        // .replace(/\)
+        .replace(/=/g, '');
+    
+    location.hash = base64Data;
 
     let start_text;
     if (!input.value == "") {
