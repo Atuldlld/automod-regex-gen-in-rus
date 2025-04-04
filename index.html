@@ -21,47 +21,47 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE. -->
 
 <head>
-    <title>AutoMod Regex Generator</title>
-    <meta property="og:title" content="AutoMod Regex Generator"/>
-    <meta property="og:description" content="Quickly generate a regex for Discord's AutoMod that will protect your community from using leetspeak to bypass keyword rules."/>
+    <title>AutoMod Regex Generator RUS</title>
+    <meta property="og:title" content="Автомод генератор регулярных выражений"/>
+    <meta property="og:description" content="Быстро сгенерируйте корпорацию для Discord's Automod, которая защитит ваше сообщество от использования LeetSpeak для обхода правил ключевых слов."/>
     <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, user-scalable=no"/>
 
     <link rel="stylesheet" href="static/main.css">
 </head>
 <body>
     <div class="banner-notification banner-critical" id="javascript-disabled">
-        Enable JavaScript to generate regexes.
+        Включите JavaScript для генерации регуляторов.
     </div>
     <div class="banner-notification banner-error" id="javascript-disabled-secondary">
-        Enable JavaScript to generate regexes.
+        Включите JavaScript для генерации регуляторов.
     </div>
     <script>
         document.getElementById("javascript-disabled").hidden = true;
         document.getElementById("javascript-disabled-secondary").hidden = true;
     </script>
     <div class="header">
-        <a href="/automod-regex-generator/">AutoMod Regex Generator</a>
+        <a href="/automod-regex-generator/">AutoMod Regex Generator RUS</a>
         <div class="pages">
             <a href="regexes.html">Regexes</a>
         </div>
     </div>
     <div class="content">
-        <p>Generate regexes for Discord's AutoMod that will protect your community from using leetspeak to bypass AutoMod.</p>
+        <p>Быстро сгенерируйте корпорацию для Discord's Automod, которая защитит ваше сообщество от использования LeetSpeak для обхода правил ключевых слов.</p>
         
         <div class="step">
-            <p>1. Insert a keyword you'd like to filter with a regex.</p>
+            <p>1. Вставьте ключевое слово, которое вы хотели бы отфильтровать с помощью регулярных выражений</p>
             <input type="text" class="text-input" id="word-input" value="hello world">
         </div>
 
         <div class="step">
             <div class="title-with-right-element">
-                <p>2. Change some settings to customize the regex.</p>
+                <p>2. Некоторые настройки для настройки регулярных выражений</p>
                 <button class="right-element" id="reset-settings">Reset Settings</button>
             </div>
             <div class="grid-row">
                 <div class="grid-item">
                     <input type="checkbox" id="filter-num" checked> Number Variants
-                    <p>Prevents character replacements using numbers. (e.g. he11o)</p>
+                    <p>Предотвращает замену символов с использованием чисел. (например, He11o)</p>
                 </div>
                 <div class="grid-item">
                     <input type="checkbox" id="filter-sym" checked> Symbol Variants
